@@ -2,8 +2,7 @@ import puppeteer, { launch } from 'puppeteer';
 import * as fs from 'fs';
 import { getData } from './get_data.js';
 
-const METRICS_URL_LOCAL =
-  'file:///Users/personal/Downloads/Google%20Cloud%20metrics%20%C2%A0_%C2%A0%20Cloud%20Monitoring.html';
+const METRICS_URL_LOCAL = 'https://cloud.google.com/monitoring/api/metrics_gcp';
 
 const browser = await puppeteer.launch({
   headless: false,
